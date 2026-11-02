@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Instagram, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { cn } from "@/utils/cn";
 import { BUSINESS, INSTAGRAM_LINK, NAV_LINKS, TEL_LINK, waLink } from "@/data/site";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/Logo";
-import { WhatsAppIcon } from "@/components/WhatsAppButton";
+import { InstagramIcon, WhatsAppIcon } from "@/components/WhatsAppButton";
 
 interface NavbarProps {
   onPlan: () => void;
@@ -230,7 +230,7 @@ export function Navbar({ onPlan }: NavbarProps) {
             className="mt-3 inline-flex items-center gap-2 text-white/60 transition-colors hover:text-gold-300"
             aria-label="Follow us on Instagram"
           >
-            <Instagram className="h-4 w-4" aria-hidden="true" />
+            <InstagramIcon className="h-4 w-4" />
             <span>@journey_of_devbhumi</span>
           </a>
         </div>

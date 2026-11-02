@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { BrandMark } from "@/components/BrandMark";
-import { WhatsAppIcon } from "@/components/WhatsAppButton";
+import { InstagramIcon, WhatsAppIcon } from "@/components/WhatsAppButton";
 import { BUSINESS, DESTINATIONS_BY_REGION, INSTAGRAM_LINK, MAIL_LINK, NAV_LINKS, TEL_LINK, waLink } from "@/data/site";
 
 interface FooterProps {
@@ -64,7 +64,7 @@ export function Footer({ onExplore, onPlan }: FooterProps) {
                 className="inline-flex items-center gap-3 text-sand-100 transition-colors hover:text-gold-300"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="h-4 w-4 text-gold-400" aria-hidden="true" />
+                <InstagramIcon className="h-4 w-4 text-gold-400" />
                 @journey_of_devbhumi
               </a>
             </li>
